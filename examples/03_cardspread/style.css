@@ -1,0 +1,110 @@
+body{
+    /* Use grid to overlap all cards */
+    display: grid;
+    padding-top: 15rem;
+}
+
+.card{
+    margin: auto;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    width: 20rem;
+    height: 30rem;
+    background-color: grey;
+    box-shadow: 0px 20px 15px -5px rgba(104, 104, 104, 0.1);
+
+    transition: ease-in 0.5s;
+}
+
+.card:nth-child(1){
+    background-color: red;
+}
+
+.card:nth-child(2){
+    background-color: orange;
+}
+
+.card:nth-child(3){
+    background-color: yellow;
+}
+
+.card:nth-child(4){
+    background-color: rgb(0, 255, 0);
+}
+
+.card:nth-child(5){
+    background-color: rgb(52, 146, 52);
+}
+
+.card:nth-child(6){
+    background-color: rgb(55, 215, 255);
+}
+
+.card:nth-child(7){
+    background-color: rgb(0, 132, 255);
+}
+
+.card:nth-child(8){
+    background-color: rgb(207, 57, 207);
+}
+
+.card:nth-child(9){
+    background-color: pink;
+}
+
+/* CSS to "fan out" the cards */
+body:hover .card:nth-child(1){
+    transform: rotate(25deg) translate(5rem, 3rem);
+}
+
+body:hover .card:nth-child(2){
+    transform: rotate(17.5deg) translate(2.5rem, 2rem);
+}
+
+body:hover .card:nth-child(3){
+    transform: rotate(10deg) translate(0rem, 1rem);
+}
+
+body:hover .card:nth-child(4){
+    transform: rotate(2.5deg) translate(-2.5rem, 0rem);
+}
+
+body:hover .card:nth-child(5){
+    transform: rotate(-5deg) translate(-5rem, -1rem);
+}
+
+body:hover .card:nth-child(6){
+    transform: rotate(-12.5deg) translate(-7.5em, -2rem);
+}
+
+body:hover .card:nth-child(7){
+    transform: rotate(-20deg) translate(-10rem, -3rem);
+}
+
+body:hover .card:nth-child(8){
+    transform: rotate(-27.5deg) translate(-12.5rem, -4rem);
+}
+
+body:hover .card:nth-child(9){
+    transform: rotate(-35deg) translate(-15rem, -5rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
