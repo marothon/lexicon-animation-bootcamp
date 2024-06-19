@@ -1,0 +1,21 @@
+.spinner{
+    margin: 20rem auto;
+    width: 0.65rem;
+    height: 5rem;
+    background-color: rgb(251, 66, 66);
+    border-radius: 20rem;
+
+    animation: spinner-rotation 0.5s linear 0s infinite;
+    transform-origin: center 4.65rem 0;
+}
+
+@keyframes spinner-rotation{
+    from{
+        transform: rotateZ(0deg);
+
+    }
+
+    to{
+        transform: rotateZ(360deg);
+    }
+}
