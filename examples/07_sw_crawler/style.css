@@ -1,0 +1,56 @@
+:root{
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: gold;
+    text-align: center;
+}
+
+main{
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+    transform-origin: center bottom;
+    animation: starwars-scroll 20s linear 0s infinite;
+}
+
+main img{
+    scale: 0.75;
+}
+
+main h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+main, main * {
+    perspective: 500px;
+
+}
+
+.episode{
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: left;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+@keyframes starwars-scroll{
+    from{
+        top: 5rem;
+        transform: rotateX(50deg) translateZ(0);
+    }
+
+    to{
+        top: -20rem;
+        transform: rotateX(60deg) translateZ(100rem);
+    }
+}
